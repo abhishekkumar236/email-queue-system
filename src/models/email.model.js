@@ -7,7 +7,6 @@ const emailSchema = new Schema(
     body: { type: String, required: true },
     sent: { type: Boolean, default: false },
     isRead: { type: Boolean, default: false },
-    userId: { type: Schema.Types.ObjectId, ref: "User" },
   },
   { timestamps: true }
 );
